@@ -1,0 +1,162 @@
+@charset "UTH-8";
+
+body{
+    font-family: "Times New Roman", Georgia, Serif;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.9949229691876751) 48%, rgba(0,143,57,1) 100%);
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+}
+
+/*2 - Header style*/
+/*2.1 - Menu bar*/
+
+.title-bar {
+    top: 0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    letter-spacing: 4px;
+    display: flex; /*Add display: flex to place elements on the same line.*/
+    align-items: center; /*Vertically aligns items to the center.*/
+    overflow: hidden; /*Prevent elements inside it from being affected by floats.*/
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); /*Add a shadow to the bar in the menu.*/
+    height: 25px;
+    z-index: 1; /*To avoid overlap..*/
+}
+
+/*company-name*/
+.company-name {
+    padding: 0 0 0 15px;
+}
+
+.company-name a {
+    background: rgb(0,143,57);
+    background: linear-gradient(90deg, rgba(0,143,57,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 100%);
+    box-shadow: 0 0 5px rgba(0,143,57,1);
+    font-weight: bold;
+    padding: 10px;
+}
+
+/*Home and Order*/
+.menu {
+    text-align: right;
+    padding: 0 30px 0 0;
+}
+
+/*company-name | menu = Home, Order*/
+.company-name,
+.menu {
+    flex: 1;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-items li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+/*Add shadow on hover*/
+.title-bar a:hover {
+    box-shadow: 0 0 5px rgba(0,143,57,1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Remove underline from menu.*/
+a {
+    text-decoration: none;
+    color: #474747;
+}
+
+/*End - Header style*/
+
+/*Main content*/
+main {
+    padding-top: 100px;
+    padding-bottom: 45px;
+}
+
+#date-field {
+    display: flex;  
+    justify-content: center;
+    font-weight: bold;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,0.9949229691876751) 0%, rgba(0,143,57,1) 100%);
+    color: white;
+}
+
+h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 20%;
+    width: 60%;
+}
+
+#area {
+    position: relative;
+    justify-content: center;
+    left: 20%;
+    width: 60%;
+    background-color: white;
+    color: black;
+}
+
+.button-submit-reset{
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    font-size: large;
+	border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+#submit {
+    background-color: rgb(149, 238, 149);
+}
+
+#submit:hover {
+    background-color: green;
+}
+
+#reset {
+    background-color: rgb(243, 150, 150);
+}
+
+#reset:hover {
+    background-color: red;
+}
+
+/*Footer style*/
+footer {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000;
+    background-color: #f1f1f1;
+    height: 65px;
+}
+
+/*Add shadow on hover*/
+footer a:hover {
+    box-shadow: 0 0 5px rgba(0,143,57,1);
+    text-decoration: none;
+    font-weight: bold;
+}
